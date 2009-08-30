@@ -1,0 +1,57 @@
+@import compass/reset
+@import blueprint/screen
+@import blueprint/modules/grid
+
++blueprint
+
+ul, li
+  margin: 0
+  padding: 0
+  list-item: none
+
+#container
+  +showgrid
+  +container
+
+  #header
+    +column(24, true)
+    ul
+      margin: 0
+      padding: 0
+      display: inline
+
+      li
+        display: block
+        float: left
+        width: 100px
+
+  #extra_info
+    +column(6)
+    clear: both
+    background-color: #ffe
+
+    .recent_shows
+      li
+        display: block
+        .image
+          +column(2)
+
+        .description
+          +column(4, true)
+
+  #next_show
+    +column(18, true)
+    background-color: #fef
+
+    .poster
+      +column(10)
+      background-color: #fef
+      overflow: hidden
+
+    .description
+      +column(8, true)
+      background-color: #eff
+
+
+h1
+  color: #333
