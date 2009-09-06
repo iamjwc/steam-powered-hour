@@ -1,8 +1,38 @@
 @import compass/reset
 @import blueprint/screen
 @import blueprint/modules/grid
+@import blueprint/modules/debug.sass
+
 
 +blueprint
+
+=rounded(!r = 3px)
+  -moz-border-radius= !r
+  -webkit-border-radius= !r
+
+body
+  background-color: #902920
+  font-family: Verdana, sans-serif
+  font-size: 11px
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+  color: #00123e
+  font-family: Georgia, serif
+  font-weight: bold
+
+h1
+  font-size: 18px
+h2
+  font-size: 16px
+  margin-bottom: 6px
+h3
+  font-size: 14px
+  margin-bottom: 8px
+
+a
+  color: #4bb2d1
 
 ul, li
   margin: 0
@@ -10,48 +40,71 @@ ul, li
   list-item: none
 
 #container
-  +showgrid
   +container
+  background-color: #ddd9a2
+  padding: 10px
 
   #header
     +column(24, true)
+    margin-bottom: 10px
+
     ul
-      margin: 0
-      padding: 0
       display: inline
 
+      li.logo
+        +column(4)
+
       li
-        display: block
+        +column(4)
         float: left
-        width: 100px
+        display: block
+
+        a
+          +rounded(8px)
+          background-color: #333
+          display: block
+          height: 2em
+          text-align: center
+          line-height: 2em
+          font-family: Georgia
+          font-size: 14px
+          text-decoration: none
+
+
 
   #extra_info
-    +column(6)
+    +column(5)
     clear: both
-    background-color: #ffe
 
     .recent_shows
+      a.see_all
+        display: block
+        float: right
+
+      ul
+        clear: both
+
       li
         display: block
         .image
           +column(2)
 
+          img
+            padding: 0 15px
+
         .description
-          +column(4, true)
+          +column(3, true)
 
   #next_show
-    +column(18, true)
-    background-color: #fef
+    +column(19, true)
 
     .poster
-      +column(10)
-      background-color: #fef
+      +column(12)
       overflow: hidden
 
     .description
-      +column(8, true)
-      background-color: #eff
+      +column(7, true)
 
-
-h1
-  color: #333
+  #footer
+    ul,li
+      display: inline

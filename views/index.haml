@@ -1,9 +1,12 @@
 #header
   %ul
     %li.logo Logo
-    %li About the Show
-    %li Cartoons
-    %li Past Shows
+    %li
+      %a{:href => "#"} About the Show
+    %li
+      %a{:href => "#"} Cartoons
+    %li
+      %a{:href => "#"} Past Shows
 
 #extra_info
   .about
@@ -17,20 +20,20 @@
       %a{:href => "#"} see more&hellip;
 
   .recent_shows
+    %a.see_all{:href => "#"} see all shows&hellip;
     %h3
       Recent Shows
-      %a{:href => "#"} see all shows&hellip;
   
     %ul
       %li
         .image
-          %img{:height => "75px", :width => "75px", :src => "http://www.scenepointblank.com/reviews/covers/01213.jpg"}
+          %img{:height => "50px", :width => "50px", :src => "http://www.scenepointblank.com/reviews/covers/01213.jpg"}
         .description
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Etiam adipiscing lobortis leo in imperdiet. Aenean a dolor
       %li
         .image
-          %img{:height => "75px", :width => "75px", :src => "http://www.scenepointblank.com/reviews/covers/01213.jpg"}
+          %img{:height => "50px", :width => "50px", :src => "http://www.scenepointblank.com/reviews/covers/01213.jpg"}
         .description
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Etiam adipiscing lobortis leo in imperdiet. Aenean a dolor
@@ -38,7 +41,7 @@
 
 #next_show
   .poster
-    %img{:src => "74690.jpg.jpeg"}
+    %img{:src => "http://knoxvillechristiancenter.org/wp-content/uploads/2009/07/poster-5-5x8-5-FINAL.jpg"}
 
   .description
     %h2 Next Show
@@ -63,10 +66,22 @@
 
       %dt Where
       %dd
-        Nuyorican Poet’s Cafe 
+        Nuyorican Poet's Cafe 
         236 E. 3rdStreet 
         New York, NY 10009 MAP 
         (212) 505-8183 
 
     %a{:href => "#"} Buy Tickets
+
+#footer
+  %p.online
+    Find us on:
+    %ul
+      %li
+        %a{:href => "#"} Twitter
+      %li
+        %a{:href => "#"} MySpace
+      %li
+        %a{:href => "#"} Facebook
       
+
