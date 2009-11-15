@@ -41,12 +41,24 @@ ul, li
 
 #container
   +container
-  background-color: #ddd9a2
-  padding: 10px
+
+  #poster
+    +column(24, true)
+    height: 150px
+    overflow: hidden
+    border: 1px solid #333
+    position: relative
+
+    img
+      position: absolute
+      top: -400px
+
 
   #header
     +column(24, true)
     margin-bottom: 10px
+
+    background-color: #ddd9a2
 
     ul
       display: inline
@@ -97,13 +109,6 @@ ul, li
 
   #next_show
     +column(19, true)
-
-    .poster
-      +column(12)
-      overflow: hidden
-
-    .description
-      +column(7, true)
 
   #footer
     ul,li

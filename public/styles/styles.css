@@ -440,9 +440,12 @@ a { color: #4bb2d1; }
 
 ul, li { margin: 0; padding: 0; list-item: none; }
 
-#container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; background-color: #ddd9a2; padding: 10px; }
+#container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; }
 #container { display: block; }
-#container #header { display: inline; float: left; margin-right: 0; width: 950px; margin-bottom: 10px; }
+#container #poster { display: inline; float: left; margin-right: 0; width: 950px; height: 150px; overflow: hidden; border: 1px solid #333; position: relative; }
+* html #container #poster { overflow-x: hidden; }
+#container #poster img { position: absolute; top: -400px; }
+#container #header { display: inline; float: left; margin-right: 0; width: 950px; margin-bottom: 10px; background-color: #ddd9a2; }
 * html #container #header { overflow-x: hidden; }
 #container #header ul { display: inline; }
 #container #header ul li.logo { display: inline; float: left; margin-right: 10px; width: 150px; }
@@ -462,8 +465,4 @@ ul, li { margin: 0; padding: 0; list-item: none; }
 * html #container #extra_info .recent_shows li .description { overflow-x: hidden; }
 #container #next_show { display: inline; float: left; margin-right: 0; width: 750px; }
 * html #container #next_show { overflow-x: hidden; }
-#container #next_show .poster { display: inline; float: left; margin-right: 10px; width: 470px; overflow: hidden; }
-* html #container #next_show .poster { overflow-x: hidden; }
-#container #next_show .description { display: inline; float: left; margin-right: 0; width: 270px; }
-* html #container #next_show .description { overflow-x: hidden; }
 #container #footer ul, #container #footer li { display: inline; }
