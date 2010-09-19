@@ -4,96 +4,224 @@
 <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
   <title>Untitled</title> 
-  <link rel="icon" href="http://assets.tumblr.com/images/default_avatar_16.gif"/> 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://demo.tumblr.com/rss"/> 
 
   <style type="text/css"> 
 
     body {
+      font-family: "Georgia";
       font-size: 62.5%;
       font-size: 1em;
       line-height: 1.4em;
+      background-color: #c9bea3;
+    }
+
+    .border2px {
+      background-image: url(lines.png);
+      padding: 2px;
+    }
+
+    .border1px {
+      background-image: url(lines.png);
+      padding: 1px;
+    }
+
+    .border1px-bottom {
+      background-image: url(lines.png);
+      padding-bottom: 1px;
+    }
+
+    div.container-container-container-container {
+      margin: 50px auto;
+      width: 900px;
+    }
+
+    div.container-container-container {
+      background-color: #fff;
+      padding: 4px;
     }
 
     div.container {
-      width: 900px;
-      margin: 50px auto;
-      border: 2px solid #333;
+      padding: 1em;
+      background-color: #fffef4;
     }
 
-    div.section {
+    h1 {
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 10px;
+      font-size: 2.0em;
+      margin: 0;
+      padding-top: 0.5em;
+      padding-bottom: 1em;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid #666;
+    }
+
+    h2, h3 { font-size: 1.2em; }
+    h4     { font-size: 1.0em; }
+    h2, h3, h4 {
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 0;
+      padding-top: 0.25em;
+      padding-bottom: 0.5em;
+      font-style: italic;
+    }
+
+    div.nextshow img {
       width: 100%;
-      border-top: 1px solid #333;
+      height: auto;
+      border: 1px dotted #666;
+      margin: 0; padding: 0;
     }
 
-    div.section.header {
+    .leftside  { width: 70%; }
+    .rightside { width: 30%; padding-left: 1em; }
+
+    td { vertical-align: top; }
+
+    td.about {
+      color: #444;
+      font-size: 0.75em;
+      font-style: italic;
+    }
+    div.about {
+      border: 1px dotted #666;
+      padding: 0em 1em;
+      background-color: #f8efb5;
+    }
+
+    td.nav {
       text-align: center;
-      border-top-width: 0;
+      vertical-align: middle;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      color: #444;
+      text-transform: uppercase;
     }
 
-    div.section.nav .about,
-    div.section.posts .post {
-      padding-left: 100px;
-      padding-right: 220px;
-    }
-    div.section.nav ul {
-      float: right;
+    td.nav ul {
       width: 200px;
       list-style: none;
       text-align: right;
-      padding-right: 1em;
     }
-    div.section.nav ul li {
+    td.nav ul li {
       display: inline;
     }
 
-
-    div.section.nav .about {
-      color: #333;
-      font-size: 0.8em;
+    span.nav {
+      border-bottom: 1px solid #333;
     }
 
+    a {
+      color: #084a88;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .posts .post {
+      padding-bottom: 1em;
+    }
   </style> 
 </head> 
 <body> 
+  <div class="container-container-container-container border2px">
+  <div class="container-container-container">
+  <div class="border1px">
   <div class="container">
-    <div class="header section">
-      <h1>The Steam Powered Hour</h1>
-    </div>
-    <div class="nav section">
-      <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#archive">Archive</a>
-        </li>
-      </ul>
-      <p class="about">
-        The Steam Powered Hour is a smart and cozy night of bluegrass music, and comedy hosted by the New Yorker cartoonist Matt Diffee. Past performers include Gillian Welch, Demetri Martin, Chris Thile, Tony Trischka, and surprise guest Steve Martin.
-      </p>
-    </div>
-    <div class="posts section">
-      <div class="post">
-        <h2>Holy Crap I’m Tired</h2>
-        <p>
-          It’s entirely possible that this design will kill me. So, you know, if you find me dead then that’s why. Not really, this is just filler content.
-        </p>
-        <p>
-          One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
-        </p>
-      </div>
+    <table>
+      <tr>
+        <th colspan="2">
+          <h1>The Steam Powered Hour</h1>
+        </th>
+      </tr>
+      <tr>
+        <td class="leftside about">
+          <div class="about">
+            <p>
+              <strong>The Steam Powered Hour</strong> is a smart and cozy night of bluegrass music, and comedy hosted by the New Yorker cartoonist Matt Diffee. Past performers include Gillian Welch, Demetri Martin, Chris Thile, Tony Trischka, and surprise guest Steve Martin.
+              <a class="more" href="#more">More &rarr;</a>
+            </p> 
+          </div>
+        </td>
+        <td class="rightside nav">
+          <span class="nav">
+            <a href="#about">About</a> ✖ <a href="#archive">Archive</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="leftside posts">
 
-      <div class="post">
-        <h2>Holy Crap I’m Tired</h2>
-        <p>
-          It’s entirely possible that this design will kill me. So, you know, if you find me dead then that’s why. Not really, this is just filler content.
-        </p>
-        <p>
-          One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
-        </p>
-      </div>
-    </div>
+          <table>
+            <!--
+            {block:Posts}
+              {block:Text}
+              <tr class="post {TagsAsClasses}">
+                  <td>
+                    {block:Title}<h3>{Title}</h3>{/block:Title}
+                    {Body}
+                  </td>
+                </tr>
+              {/block:Text}
+            {/block:Posts}
+            -->
+
+            <tr class="post season1 show2">
+              <td>
+                <h3>Season 1 - Show 2</h3>
+                <object width="500" height="411"><param name="movie" value="http://www.youtube.com/v/HIgsqYJmtJs&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/HIgsqYJmtJs&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowFullScreen="true" wmode="transparent"></embed></object>
+              </td>
+            </tr>
+
+            <tr class="post season1 show1">
+              <td>
+                <h3>Season 1 - Show 1</h3>
+                <object width="500" height="411"><param name="movie" value="http://www.youtube.com/v/njBbT2r6MdU&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/njBbT2r6MdU&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowFullScreen="true" wmode="transparent"></embed></object>
+                <object width="500" height="411"><param name="movie" value="http://www.youtube.com/v/HIgsqYJmtJs&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/HIgsqYJmtJs&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowFullScreen="true" wmode="transparent"></embed></object>
+              </td>
+            </tr>
+
+            <tr class="post season1 show3">
+              <td>
+                <h3>Season 1 - Show 3</h3>
+                <object width="500" height="411"><param name="movie" value="http://www.youtube.com/v/njBbT2r6MdU&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/njBbT2r6MdU&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowFullScreen="true" wmode="transparent"></embed></object>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <td class="rightside">
+          <div class="nextshow">
+            <h2>Next Show</h2>
+            <p><img height="842" width="561" alt="Next Show" src="pig.jpg"/></p> 
+            <p>Next show is coming up!</p> 
+            <p>Featuring:</p> 
+            <ul> 
+              <li>Birdhive Boys</li> 
+              <li>Backstreet Boys</li> 
+              <li>BB Boys</li> 
+            </ul> 
+            <p>Will be great fun!</p>
+            <a href="#">Read more&hellip;</a>
+          </div>
+
+          <div class="links">
+            <h4>Find Steam Powered Elsewhere On The Web</h4>
+            <ul> 
+              <li><a href="#">Twitter</a></li> 
+              <li><a href="#">Facebook</a></li> 
+            </ul> 
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
   </div>
 </body> 
 </html>
